@@ -1,0 +1,195 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
+html {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  cursor: default;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("/resources/images/num6.JPG");
+  background-size: cover;
+
+  background-repeat: repeat;
+
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: body 60s infinite;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /*background-position: left;*/
+  margin: 0;
+}
+
+body:not(div) {
+  transition-duration: 3000ms;
+}
+
+header > div {
+  color: white;
+  font-size: 5rem;
+  background-color: black;
+}
+
+body > header > .game-over {
+  display: none;
+  position: fixed;
+
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+}
+body > header > #fail,
+body > header > #clear {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 100;
+  display: none;
+
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 2rem;
+}
+
+body > header > #time {
+  position: relative;
+  text-align: center;
+  z-index: 150;
+  border-radius: 999rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  /*border: rgba(55,88,88,0.5) solid 0.5rem;*/
+  border: white solid 0.5rem;
+  cursor: pointer;
+}
+body > #count {
+  margin-top: 1rem;
+  padding: 0.25rem 0.8rem;
+  position: relative;
+  color: red;
+  z-index: 150;
+  text-align: center;
+  border-radius: 999rem;
+  transform: translateX(15%);
+  background-color: black;
+  font-size: 2rem;
+}
+body > header > #cover > .coverText2 {
+  display: block;
+  background-color: black;
+  font-size: 2rem;
+}
+
+body > header > #cover {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+  z-index: 200;
+  color: white;
+  background-image: url("/resources/images/cover.png");
+  filter: brightness(110%);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+}
+body > header > #cover > .button-container {
+  width: 100%;
+  position: fixed;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: revert;
+  justify-content: space-around;
+}
+
+body > header > #cover > .button-container > label > input {
+  border-radius: 3rem;
+  padding: 2rem;
+  font-size: 5rem;
+  color: white;
+  background-color: black;
+  border: white solid 1rem;
+  cursor: pointer;
+}
+body > header > #cover > .button-container > label > input:hover {
+  background-color: grey;
+}
+
+div:not(#cover, #count, #time, .button-container) {
+  animation: blink normal 5s infinite ease-in-out;
+}
+
+body > main {
+  display: grid;
+  background-color: black;
+  grid-template-columns: repeat(3, 1fr);
+  /*border: rgba(55,88,88,0.5) solid 0.5rem;*/
+  border: white solid 0.5rem;
+  font-size: 5rem;
+  color: white;
+  border-radius: 0.6rem;
+}
+
+body > main > div {
+  width: 10rem;
+  height: 10rem;
+  border: 0.1rem solid white;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+body > main > .d55 {
+  cursor: not-allowed;
+}
+
+body > main > div:hover:not(.d55) {
+  background-color: white;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+  cursor: grab;
+}
+
+body > main > #d55 {
+  background-image: url("/resources/images/pichu.jpg");
+  background-size: 100%;
+}
+
+@keyframes body {
+  10% {
+    background-position: right;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

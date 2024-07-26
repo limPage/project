@@ -24,6 +24,7 @@
 - 버튼 색상 value 명칭 통일 (btn_type -> btn_type00)
 
 - 송수신시 LED ID에 오류가 있을 경우 정상 값으로 대체 ( 0x07 -> 0x40)
+  <br><br><br>
   
   
 

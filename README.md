@@ -1,4 +1,4 @@
-### LG H800 Unifiedㅁ2
+### LG H800 Unifiedㅁ
 
 
 ## 2024-08-08 수정 내용 

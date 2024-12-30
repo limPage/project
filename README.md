@@ -4,7 +4,9 @@
 
 ### LGSettings
 
-- 설정 마법사에서 Aom server, Aom context 값을 비워놓고 저장하는 것을 허용되게 수정
+- 설정 마법사에서 Aom server, Aom context 값을 비워놓고 저장하는 것을 허용되게 변경
+
+- ver 0.0.7-7 에서 0.0.8-8로 변경
 
 <br>
 

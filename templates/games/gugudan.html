@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>: : gugudan : :</title>
+
+    <script th:src="@{/resources/scripts/gugudan.js}" defer></script>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/gugudan.css?ver=1}">
+
+
+</head>
+
+
+<body id="body">
+
+
+    <header>
+        <div id="time">
+            <span id="start">start</span>
+        </div>
+
+
+
+        <div id="cover" >
+            <span class="coverText">99dan simulator </span>
+            <span class="coverText2">5초 마다 위치가 바뀌는 숫자를 눌러 제한 시간내에 중앙에 제시되는 10문제를 맞추고 피카추를 구해보자! </span>
+            <div class="button-container">
+                <label>
+                <input id="hard" type="button" value="Hard Mode">
+                </label>
+                <label>
+                <input id="easy" type="button" value="Easy Mode">
+                </label>
+
+            </div>
+        </div>
+        <img class="game-over"  src="/resources/images/game_over.PNG" id="img" alt="game-over">
+        <img id="fail" src="/resources/images/fail.jpg" alt="fail">
+        <img id="clear" src="/resources/images/clear.jpg" alt="clear">
+    </header>
+
+    <main>
+        <div class="d2" id="d2">
+            <span>2</span>
+        </div>
+        <div class="d3" id="d3">
+            <span>3</span>
+        </div>
+        <div class="d4" id="d4">
+            <span>4</span>
+        </div>
+        <div class="d5" id="d5">
+            <span>5</span>
+        </div>
+        <div class="d55" id="d55">
+            <span></span>
+        </div>
+        <div class="d6" id="d6">
+            <span>6</span>
+        </div>
+        <div class="d7" id="d7">
+            <span>7</span>
+        </div>
+        <div class="d8" id="d8">
+            <span>8</span>
+        </div>
+        <div class="d9" id="d9">
+            <span>9</span></div>
+
+
+    </main>
+    <div id="count">
+        <span>0</span>
+    </div>
+</body>
+
+
+</html>

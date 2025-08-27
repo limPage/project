@@ -1,0 +1,1 @@
+pyinstaller --noconsole --onefile --icon=icon.ico --add-data "pikachu_gugudan.html;." app.py
